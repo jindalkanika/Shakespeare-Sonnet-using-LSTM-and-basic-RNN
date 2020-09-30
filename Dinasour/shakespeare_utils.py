@@ -28,11 +28,10 @@ def build_data(text, Tx = 40, stride = 3):
     X = []
     Y = []
 
-    ### START CODE HERE ### (≈ 3 lines)
+    #calculate number of training examples
     for i in range(0, len(text) - Tx, stride):
         X.append(text[i: i + Tx])
         Y.append(text[i + Tx])
-    ### END CODE HERE ###
     
     print('number of training examples:', len(X))
     
